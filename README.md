@@ -46,3 +46,44 @@ p + geom_point(aes(x=displ,y=hwy))
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+
+## Grafica en 3D
+
+``` r
+p + geom_point(aes(x=displ,y=hwy, color=class),size=3)
+```
+
+![](README_files/figure-gfm/3d%20class-1.png)<!-- -->
+
+``` r
+p + geom_point(aes(x=displ,y=hwy, color=(displ <= 4) ), size=3)
+```
+
+![](README_files/figure-gfm/3d-class-1.png)<!-- --> \#\# Caso 2
+
+``` r
+#str(mtcars) # Nuevo Data Frame
+    p <- ggplot(mtcars, aes(wt, mpg))
+ 
+    p + geom_point(aes(colour = cyl), size=3) # No es un factor es número
+```
+
+![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+
+``` r
+p + geom_point(aes(colour = factor(cyl)), size=3)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+
+``` r
+p + geom_point(aes(shape = factor(cyl)), size=3)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+
+``` r
+p + geom_point(aes(colour = factor(cyl)), size = 4) 
+```
+
+![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->

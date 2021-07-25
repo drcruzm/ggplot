@@ -36,5 +36,40 @@ p + geom_point(aes(x=displ,y=hwy))
 
 ```
     
+## Grafica en 3D
+
+```{r 3d class}
+p + geom_point(aes(x=displ,y=hwy, color=class),size=3)
+```
+
+
+```{r 3d-class}
+p + geom_point(aes(x=displ,y=hwy, color=(displ <= 4) ), size=3)
+```
+## Caso 2
+
+```{r}
+#str(mtcars) # Nuevo Data Frame
+    p <- ggplot(mtcars, aes(wt, mpg))
+ 
+    p + geom_point(aes(colour = cyl), size=3) # No es un factor es número
+```
+
+
+```{r}
+p + geom_point(aes(colour = factor(cyl)), size=3)
+```
+
+
+```{r}
+p + geom_point(aes(shape = factor(cyl)), size=3)
+```
+
+
+```{r}
+p + geom_point(aes(colour = factor(cyl)), size = 4) 
     
-    
+```
+
+
+
