@@ -57,7 +57,7 @@ p + geom_point(aes(x=displ,y=hwy, color=(displ <= 4) ), size=3)
 
 
 ```{r}
-p + geom_point(aes(colour = factor(cyl)), size=3)
+p + geom_point(aes(colour = factor(cyl)), size=4)
 ```
 
 
@@ -66,10 +66,6 @@ p + geom_point(aes(shape = factor(cyl)), size=3)
 ```
 
 
-```{r}
-p + geom_point(aes(colour = factor(cyl)), size = 4) 
-    
-```
 
 
 

@@ -71,7 +71,7 @@ p + geom_point(aes(x=displ,y=hwy, color=(displ <= 4) ), size=3)
 ![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 ``` r
-p + geom_point(aes(colour = factor(cyl)), size=3)
+p + geom_point(aes(colour = factor(cyl)), size=4)
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
@@ -81,9 +81,3 @@ p + geom_point(aes(shape = factor(cyl)), size=3)
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
-
-``` r
-p + geom_point(aes(colour = factor(cyl)), size = 4) 
-```
-
-![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
