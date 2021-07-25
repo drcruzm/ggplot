@@ -35,3 +35,14 @@ p + geom_point(aes(x=displ,y=hwy))
 ``` r
 # ?geom_point # Buscar Ayuda
 ```
+
+> Tipos de Figuras:
+> <https://www.dropbox.com/s/h18nmf5vahdidzs/figuras.Rmd?dl=0>
+
+## Aplicando aes
+
+``` r
+    p + geom_point(aes(x=displ,y=hwy), shape=23, size=3, color="red",fill="yellow")
+```
+
+![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
